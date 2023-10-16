@@ -2,4 +2,8 @@ rootProject.name = 'ClinicSheduleService'
 include 'security-module'
 include 'api-gateway'
 include 'security-service'
+include 'eureka-server'
+include 'kafka-producer-service'
+include 'kafka-consumer-service'
+include 'common-service'
 

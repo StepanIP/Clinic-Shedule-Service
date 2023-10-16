@@ -9,6 +9,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/api-gateway" />
+            <option value="$PROJECT_DIR$/common-service" />
+            <option value="$PROJECT_DIR$/eureka-server" />
+            <option value="$PROJECT_DIR$/kafka-consumer-service" />
+            <option value="$PROJECT_DIR$/kafka-producer-service" />
             <option value="$PROJECT_DIR$/security-module" />
             <option value="$PROJECT_DIR$/security-service" />
           </set>
