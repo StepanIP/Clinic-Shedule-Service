@@ -1,7 +1,10 @@
 plugins {
     id 'java'
+    id 'java-library'
+    id 'org.springframework.boot' version '3.1.2'
+    id 'io.spring.dependency-management' version '1.1.2'
+    id 'jacoco'
 }
-
 group = 'org.example'
 version = '1.0-SNAPSHOT'
 
@@ -10,8 +13,20 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.9.1')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+    api 'org.springframework.boot:spring-boot-starter'
+    api 'org.springframework.boot:spring-boot-starter-data-jpa'
+    api 'javax.validation:validation-api:2.0.1.Final'
+    api 'org.springframework.boot:spring-boot-starter-security'
+    api 'org.postgresql:postgresql:42.3.8'
+    api 'org.springframework.boot:spring-boot-starter-web'
+    api 'org.springframework:spring-web'
+    api 'org.slf4j:slf4j-api'
+    api 'org.springframework:spring-context'
+
+    api 'org.projectlombok:lombok:1.18.26'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 test {
