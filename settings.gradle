@@ -1,0 +1,5 @@
+rootProject.name = 'ClinicSheduleService'
+include 'security-module'
+include 'api-gateway'
+include 'security-service'
+
